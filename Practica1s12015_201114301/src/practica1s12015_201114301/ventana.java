@@ -10,6 +10,10 @@ package practica1s12015_201114301;
  */
 public class ventana extends javax.swing.JFrame {
 
+ public lista jugadores = new lista();
+ 
+
+    
     /**
      * Creates new form ventana
      */
