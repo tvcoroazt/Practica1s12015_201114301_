@@ -138,23 +138,25 @@ public class jugador1P extends javax.swing.JFrame {
         // TODO add your handling code here:
      
         ventana vent = new ventana();
+        mostrar mos = new mostrar();
         
         boolean Exito = false; 
         
-        
-       vent.jugadores.AgregarNodo("az",3,"dfa");
-       vent.jugadores.AgregarNodo(jTextField1.getText(), Integer.parseInt(jTextField2.getText()), jTextField3.getText() );
+           vent.jugplantas.AgregarNodo(jTextField1.getText(), Integer.parseInt(jTextField2.getText()), jTextField3.getText() );
       
-       System.out.println("Jugador 1 es una Planta:" + vent.jugadores.ImpimirLista());
-      Exito = vent.jugadores.ElminarNodo(jTextField1.getText(), Integer.parseInt(jTextField2.getText()));
+       System.out.println("Jugador 1 es una Planta:" + vent.jugplantas.ImpimirLista());
+     
+       
+      Exito = vent.jugplantas.ElminarNodo(jTextField1.getText(), Integer.parseInt(jTextField2.getText()));
        if (Exito == true)
         {
             System.out.println("Selecciona jugador 2");
             jugador2Z zombies = new jugador2Z();
             zombies.setVisible(true);
+            this.dispose();
             
                      int numero;
-            numero = vent.jugadores.NumElementos;
+            numero = vent.jugplantas.NumElementos;
         System.out.println("Elementos en la lista " + numero);     
             
         }

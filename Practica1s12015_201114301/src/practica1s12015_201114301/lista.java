@@ -161,15 +161,15 @@ public class lista {
         {
             if (EsVacio()!=true)
             {
-                int pos = ObtenerIndiceNodo(nombre,Dato);//Se obtiene la posicion del nodo en la lista
-                if (pos==1 && NumElementos == 1)//Si el elemento que se busca es el primero y no hay mas en la lista
+                int pos = ObtenerIndiceNodo(nombre,Dato);
+                if (pos==1 && NumElementos == 1)
                 {
-                    Primero = Ultimo = null; //El primero y el ultimo se hacen nulos
+                    Primero = Ultimo = null; 
                 }
-                else if (pos ==1 && NumElementos>1)//Si se desea elminiar el primero pero hay mas en la lista
+                else if (pos ==1 && NumElementos>1)
                 {
-                    nodo Temp = Primero.Siguiente; //Se obtiene el nodo siguiente
-                    Primero.Siguiente = null; //Se desvincula al primero de la lista
+                    nodo Temp = Primero.Siguiente;
+                    Primero.Siguiente = null; 
                     Primero = Temp; //El siguiente nodo pasa a ser el primero de la lista
                 }
                 else if (pos > 1 && pos == NumElementos)//Si se desea elminiar el ultimo nodo

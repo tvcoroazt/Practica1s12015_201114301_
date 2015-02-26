@@ -6,7 +6,12 @@ package practica1s12015_201114301;
 
         
 
-
+import static practica1s12015_201114301.listaUsuarios.cfP;
+import static practica1s12015_201114301.listaUsuarios.cfZ;
+import static practica1s12015_201114301.listaUsuarios.cnP;
+import static practica1s12015_201114301.listaUsuarios.cnZ;
+import static practica1s12015_201114301.listaUsuarios.fP;
+import static practica1s12015_201114301.listaUsuarios.fZ;
         
 /**
  *
@@ -20,7 +25,7 @@ public class jugador2Z extends javax.swing.JFrame {
     public jugador2Z() {
         initComponents();
     }
-
+   public static listaUsuarios PZombies = new listaUsuarios();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -143,24 +148,8 @@ public class jugador2Z extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here
-         ventana vent = new ventana();
-     
-        boolean Exito = false; 
-        vent.jugadores.AgregarNodo(jTextField2.getText(), Integer.parseInt(jTextField3.getText()), jTextField1.getText());
-      //  System.out.println("Jugador 2 es un Zombie" + vent.jugadores.ImpimirLista());
-         
-       Exito = vent.jugadores.ElminarNodo(jTextField1.getText(), Integer.parseInt(jTextField2.getText()));
-       if (Exito == true)
-        {
-        plantas plantas = new plantas();
-            plantas.setVisible(true);
-        }
-        else
-        {
-            System.out.println("Selecciona jugador 1");
-            jugador1P jp = new jugador1P();
-            jp.setVisible(true);  
-        }
+  PZombies.Cabeza(this.jTextField1.getText());
+
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -174,7 +163,7 @@ public class jugador2Z extends javax.swing.JFrame {
         vacio = vent.jugadores.EsVacio();
     
         
-        vent.jugadores.AgregarNodo("ast", 4, "guate");
+  
  vent.jugadores.AgregarNodo("ast", 43, "guassdte");
              int numero;
             numero = vent.jugadores.NumElementos;
