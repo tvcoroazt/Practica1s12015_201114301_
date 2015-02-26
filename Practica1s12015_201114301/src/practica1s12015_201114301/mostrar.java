@@ -87,7 +87,7 @@ public class mostrar extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
           this.jTextArea1.setText("");
-        this.jTextArea1.setText(PPlantas.VerPruebas());
+       // this.jTextArea1.setText(PPlantas.VerPruebas());
         
         ven.jugplantas.ImpimirLista();
         
