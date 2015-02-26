@@ -175,7 +175,7 @@ public class jugador2Z extends javax.swing.JFrame {
     
         
         vent.jugadores.AgregarNodo("ast", 4, "guate");
- 
+ vent.jugadores.AgregarNodo("ast", 43, "guassdte");
              int numero;
             numero = vent.jugadores.NumElementos;
         System.out.println("Elementos en la lista " + numero);   
